@@ -1,0 +1,541 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width:100%;
+}
+
+.homevideo{
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+video{
+    width:100%;
+    height:80vh;
+    object-fit: fill;
+    position:relative;
+    /* -webkit-filter: blur(2px); */
+    opacity: 0.7;
+}
+
+.homevideo h1
+{
+    position:absolute;
+    color:black;
+    font-size:70px;
+    font-weight:900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.homevideo button{
+    position:absolute;
+    font-size:24px;
+    /* font-weight: 900; */
+    display: block;
+    left:450px;
+}
+
+.btn1{
+    color:maroon;
+    background-color: white;
+    border:none;
+    padding:20px 40px;
+    cursor:pointer;
+    bottom:150px;
+}
+.btn1:hover{
+    color:white;
+    background-color: blue;
+    border:none;
+    padding:20px 40px;
+    cursor:pointer;
+
+}
+.btn2{
+    color:white;
+    background-color: maroon;
+    border:none;
+    padding:20px 40px;
+    cursor:pointer;
+    bottom:50px;
+}
+
+.btn2:hover{
+    color:white;
+    background-color:blue;
+    border:none;
+    padding:20px 40px;
+    cursor:pointer;
+
+}
+
+.homevideo span{
+    color:maroon;
+}
+
+.slider{
+    width:100%;
+    padding-top:50px;
+    text-align: center;
+}
+
+.slider h1{
+    color:maroon;
+    font-size:48px;
+    font-weight:800;
+    line-height: 5px;
+    letter-spacing: 1px;
+
+}
+
+.slider p{
+    font-size:28px;
+    font-weight:700;
+}
+.slidecontent{
+    padding-top:40px;
+}
+
+.slideshow{
+    padding-top:100px;
+    width:100%;
+    text-align:center;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.swipeslide{
+    width:100%;
+    overflow: hidden;
+    max-width:960px;
+}
+
+.carousel{
+    display:flex;
+    transition:transform 0.5s ease-in-out;
+}
+
+.box{
+    min-width:300px;
+    min-height:500px;
+    text-align: center;
+    margin:0 10px;
+    background-color: gray;
+    padding:20px;
+    border-radius: 5px;
+    position:relative;
+    top:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+.imagecontent h1{
+    font-size:36px;
+    color:maroon;
+}
+.imagecontent{
+    padding-left:84px;
+}
+
+
+
+.image{
+    display:flex;
+
+}
+.picture{
+    width:40%;
+    height:200px;
+    position:absolute;
+    top:-40px;
+}
+
+.boxcontent{
+    margin-top:100px;
+    border-left:5px solid maroon;
+ }
+
+.boxbtn{
+    margin-top:40px;
+    padding:10px 40px;
+    border:2px solid black;
+    background-color:unset;
+    cursor:pointer;
+}
+
+.boxbtn:hover{
+
+    color:white;
+    background-color:blue;
+
+}
+.black{
+padding:10px;
+color:maroon;
+font-size:46px;
+border:none;
+background-color: unset;
+cursor:pointer;
+}
+
+.left{
+    left:220px;
+    position: absolute;
+}
+
+.right{
+    position:absolute;
+    right:220px;
+}
+
+
+
+
+
+.gallery{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    margin:50px;
+
+}
+
+
+
+.galleryimage{
+    width:100%;
+    text-align:center;
+}
+
+
+
+
+.gallerycontent{
+    width:100%;
+    padding-top:100px;
+    text-align: center;
+}
+
+.gallerycontent h1{
+    color:maroon;
+    font-size:48px;
+    font-weight:800;
+    line-height: 5px;
+    letter-spacing: 1px;
+
+}
+
+.gallerycontent p{
+    font-size:28px;
+    font-weight:700;
+}
+
+.gallerybutton{
+    width:100%;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.boxbtn2{
+    margin-top:10px;
+}
+
+.container2{
+    display:none;
+}
+
+
+
+
+/* MOBILE VIEW   */
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 768px) {
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    
+    }
+    
+    .container2{
+        width:100%;
+        display:block;
+    }
+    
+    .homevideo{
+        display:none;
+        margin:0;
+    
+    }
+    
+    video{
+        display:none;
+    }
+
+    .video1{
+    display:none;
+    margin:0;
+    
+    }
+    
+    .backgroundimage{
+        display:block;
+        background-image: url('./images/image-07.png');
+        position:relative;
+        width:100%;
+        height:40vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+       margin-top:0;
+       z-index: -10;
+       opacity: 0.5;
+    }
+
+
+.homeimage{
+
+    text-align:center;
+}
+
+
+
+    .homeimage h1
+    {
+        position:absolute;
+        color:black;
+        font-size:24px;
+        font-weight:900;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top:60px;
+        left:30px;
+    
+    }
+    
+    .homeimage button{
+        position:absolute;
+        font-size:14px;
+        /* font-weight: 900; */
+        display: block;
+         left:30px;
+    }
+    
+    .btn3{
+        color:maroon;
+        background-color: white;
+        border:none;
+        padding:5px 10px;
+        cursor:pointer;
+        top:120px;
+    }
+    .btn3:hover{
+        color:white;
+        background-color: blue;
+        border:none;
+        padding:5px 10px;
+        cursor:pointer;
+    }
+
+    .homeimage span{
+        color:maroon;
+    }
+    
+    .slider{
+        width:100%;
+        padding-top:10px;
+        text-align: center;
+    }
+    
+    .slider h1{
+        color:maroon;
+        font-size:22px;
+        font-weight:800;
+        line-height: 0 ;
+        letter-spacing: 0;
+    
+    }
+    
+    .slider p{
+        font-size:14px;
+        font-weight:700;
+    }
+    .slidecontent{
+        padding-top:10px;
+    }
+    
+    .slideshow{
+        padding-top:100px;
+        width:100%;
+        text-align:center;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+    }
+    .swipeslide{
+        width:100%;
+        overflow: hidden;
+        max-width:320px;
+    }
+    
+    .carousel{
+        display:flex;
+        transition:transform 0.5s ease-in-out;
+    }
+    
+    .box{
+        min-width:300px;
+        min-height:500px;
+        text-align: center;
+        margin:0 10px;
+        background-color: gray;
+        padding:20px;
+        border-radius: 5px;
+        position:relative;
+        top:40px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    
+    
+    .imagecontent h1{
+        font-size:36px;
+        color:maroon;
+    }
+    .imagecontent{
+        padding-left:84px;
+    }
+    
+    
+    
+    .image{
+        display:flex;
+    
+    }
+    .picture{
+        width:40%;
+        height:200px;
+        position:absolute;
+        top:-40px;
+    }
+    
+    .boxcontent{
+        margin-top:100px;
+        border-left:5px solid maroon;
+     }
+    
+    .boxbtn{
+        margin-top:40px;
+        padding:10px 40px;
+        border:2px solid black;
+        background-color:unset;
+        cursor:pointer;
+    }
+    
+    .boxbtn:hover{
+    
+        color:white;
+        background-color:blue;
+    
+    }
+    .black{
+    padding:5px;
+    color:maroon;
+    font-size:30px;
+    border:none;
+    background-color: unset;
+    cursor:pointer;
+    }
+    
+    .left{
+        top:600px;
+        left:100px;
+        position: absolute;
+    }
+    
+    .right{
+        position:absolute;
+        top:600px;
+        right:120px;
+    }
+    
+    
+    
+    
+    
+    .gallery{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        justify-content:center;
+        align-items: center;
+        gap:20px;
+        margin:50px;
+    
+    }
+    
+    
+    
+    .galleryimage{
+        width:100%;
+        text-align:center;
+    }
+    
+    
+    
+    
+    .gallerycontent{
+        width:100%;
+        padding-top:100px;
+        text-align: center;
+    }
+    
+    .gallerycontent h1{
+        color:maroon;
+        font-size:22px;
+        font-weight:800;
+        line-height: 2px;
+        letter-spacing: 1px;
+    
+    }
+    
+    .gallerycontent p{
+        font-size:14px;
+        font-weight:700;
+    }
+    
+    .gallerybutton{
+        width:100%;
+        text-align:center;
+        margin-bottom: 50px;
+    }
+    .boxbtn2{
+        margin-top:10px;
+        padding:10px 80px;
+        border:2px solid black;
+        background-color:unset;
+        cursor:pointer;
+        font-size:14px;
+    }
+
+}
+
+
